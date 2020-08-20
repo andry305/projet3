@@ -1,0 +1,88 @@
+html {
+  background-color: #bfc9ca;
+}
+
+body {
+  width: 1000px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: #579c87;
+  color: #fdcb46;
+  height: 80px;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.prochainement {
+  background-color: #579c87;
+  color: #fdcb46;
+}
+
+footer {
+  background-color: #579c87;
+  color: #fdcb46;
+  height: 50px;
+}
+
+.menu_la_note_enchantee {
+  background-color: #fcdfdb;
+  -webkit-box-shadow: 4px 4px 4px 4px #eeeeee;
+          box-shadow: 4px 4px 4px 4px #eeeeee;
+  border: 1px solid #eeeeee;
+  width: 400px;
+  height: 600px;
+  margin: 30px 24px;
+}
+
+.menu_Le_chic_a_la_francaise {
+  background-color: #fff5fe;
+  -webkit-box-shadow: 4px 4px 4px 4px #eeeeee;
+          box-shadow: 4px 4px 4px 4px #eeeeee;
+  border: 1px solid #eeeeee;
+  width: 400px;
+  height: 600px;
+  margin: 30px 24px;
+}
+
+.menu_le_delice_des_papilles {
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 4px 4px 4px 4px #eeeeee;
+          box-shadow: 4px 4px 4px 4px #eeeeee;
+  border: 1px solid #eeeeee;
+  width: 400px;
+  height: 600px;
+  margin: 30px 24px;
+}
+
+.menu_la_palette_du_gout {
+  background-color: #fdfffd;
+  -webkit-box-shadow: 4px 4px 4px 4px #eeeeee;
+          box-shadow: 4px 4px 4px 4px #eeeeee;
+  border: 1px solid #eeeeee;
+  width: 400px;
+  height: 600px;
+  margin: 30px 24px;
+}
+
+section {
+  margin: 0px 50px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,81 @@
+html{
+    background-color: #bfc9ca;
+}
+
+body{
+    width: 1000px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin couleurs_vert_jaune {
+    background-color: #579c87;
+    color: #fdcb46;
+}
+
+@mixin bordure_menu {
+    box-shadow: 4px 4px 4px 4px #eeeeee;
+    border: 1px solid #eeeeee;
+}
+
+@mixin size {
+    width: 400px;
+    height: 600px;
+    margin: 30px 24px;
+}
+
+header{
+    @include couleurs_vert_jaune;
+    height : 80px;
+}
+
+h1,h2,p{
+    text-align: center;
+}
+
+.prochainement{
+    @include couleurs_vert_jaune;
+}
+
+footer{
+    @include couleurs_vert_jaune;
+    height: 50px;
+}
+
+.menu_la_note_enchantee{
+    background-color: #fcdfdb;
+    @include bordure_menu;
+    @include size;
+}
+
+.menu_Le_chic_a_la_francaise{
+    background-color: #fff5fe;
+    @include bordure_menu;
+    @include size;
+}
+
+.menu_le_delice_des_papilles{
+    background-color: #f9f9f9;
+    @include bordure_menu;
+    @include size;
+}
+
+.menu_la_palette_du_gout{
+    background-color: #fdfffd;
+    @include bordure_menu;
+    @include size;
+}
+
+section{
+    margin: 0px 50px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
