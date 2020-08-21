@@ -1,73 +1,56 @@
+$color-1er : #579c87;
+$color-2e  : #fdcb46;
+
+@mixin couleurs_vert_jaune{
+    background-color: $color-1er;
+    color: $color-2e ;
+}
+
+@mixin bordure_menu{
+    box-shadow: 4px 4px 4px 4px #eeeeee;
+    border: 1px solid #eeeeee;
+}
+
+@mixin size{
+    width: 350px;
+    height: 450px;
+    margin: 50px auto 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
 html{
     background-color: #bfc9ca;
 }
 
 body{
-    width: 1000px;
+    width: 900px;
+    height: auto;
     background-color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto;
 }
 
-@mixin couleurs_vert_jaune {
-    background-color: #579c87;
-    color: #fdcb46;
-}
-
-@mixin bordure_menu {
-    box-shadow: 4px 4px 4px 4px #eeeeee;
-    border: 1px solid #eeeeee;
-}
-
-@mixin size {
-    width: 400px;
-    height: 600px;
-    margin: 30px 24px;
-}
+/*********** header ************/
 
 header{
     @include couleurs_vert_jaune;
     height : 80px;
 }
 
-h1,h2,p{
+header h1{
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+    padding-top: 20px;
+    margin-top: 0px;
 }
 
-.prochainement{
-    @include couleurs_vert_jaune;
-}
-
-footer{
-    @include couleurs_vert_jaune;
-    height: 50px;
-}
-
-.menu_la_note_enchantee{
-    background-color: #fcdfdb;
-    @include bordure_menu;
-    @include size;
-}
-
-.menu_Le_chic_a_la_francaise{
-    background-color: #fff5fe;
-    @include bordure_menu;
-    @include size;
-}
-
-.menu_le_delice_des_papilles{
-    background-color: #f9f9f9;
-    @include bordure_menu;
-    @include size;
-}
-
-.menu_la_palette_du_gout{
-    background-color: #fdfffd;
-    @include bordure_menu;
-    @include size;
-}
+/*********** section ***********/
 
 section{
+    text-align: center;
     margin: 0px 50px;
 }
 
@@ -75,7 +58,102 @@ nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
+.prochainement{
+    @include couleurs_vert_jaune;
+    padding: 13px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Montserrat Extra-light', sans-serif;
+    font-weight: 200;
+}
 
+aside h2{
+    margin: 10px 0px 40px;
+}
 
+/************ footer ***********/
+
+footer{
+    @include couleurs_vert_jaune;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    font-family: 'Montserrat Extra-light', sans-serif;
+    font-weight: 200;
+    font-size: 22px;
+}
+
+footer a{
+    color:  $color-2e ;
+    text-decoration: none;
+}
+
+/* ---- menu la note enchantee ---- */
+
+.menu_la_note_enchantee{
+    background-color: #fcdfdb;
+    @include bordure_menu;
+    @include size;
+}
+
+.menu_la_note_enchantee p{
+    font-family: 'Satisfy', cursive;
+}
+
+.menu_la_note_enchantee h2{
+    font-family: 'Rubik', sans-serif;
+}
+
+/* ---- menu le chic a la francaise ---- */
+
+.menu_Le_chic_a_la_francaise{
+    background-color: #fff5fe;
+    @include bordure_menu;
+    @include size;
+}
+
+.menu_Le_chic_a_la_francaise p{
+    font-family: 'Croissant One', cursive;
+}
+
+.menu_Le_chic_a_la_francaise h2{
+    font-family: 'PT Serif', serif;
+}
+
+/* ---- menu le delice des papilles ---- */
+
+.menu_le_delice_des_papilles{
+    background-color: #f9f9f9;
+    @include bordure_menu;
+    @include size;
+}
+
+.menu_le_delice_des_papilles p{
+    font-family: 'Dancing Script', cursive;
+}
+
+.menu_le_delice_des_papilles h2{
+    font-family: 'Kalam', cursive;
+    font-weight: 300;
+}
+
+/* ---- menu la palette du gout ---- */
+
+.menu_la_palette_du_gout{
+    background-color: #fdfffd;
+    @include bordure_menu;
+    @include size;
+}
+
+.menu_la_palette_du_gout p{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.menu_la_palette_du_gout h2{
+    font-family: 'Kalam', cursive;
+    font-weight: 300;
+}
