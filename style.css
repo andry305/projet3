@@ -1,9 +1,9 @@
 html {
-  background-color: #bfc9ca;
+  background-color: #ffffff;
 }
 
 body {
-  width: 900px;
+  width: 100%;
   height: auto;
   background-color: #ffffff;
   margin: 0px auto;
@@ -26,7 +26,6 @@ header h1 {
 /*********** section ***********/
 section {
   text-align: center;
-  margin: 0px 50px;
 }
 
 nav {
@@ -40,20 +39,76 @@ nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.prochainement {
+aside p {
+  margin: 50px;
+}
+
+aside a {
   background-color: #579c87;
   color: #fdcb46;
-  padding: 13px 40px;
+  padding: 20px;
   border-radius: 10px;
   text-decoration: none;
   font-family: 'Montserrat Extra-light', sans-serif;
   font-weight: 200;
+  text-decoration: none;
 }
 
-aside h2 {
-  margin: 10px 0px 40px;
+@-webkit-keyframes jumpdot {
+  0% {
+    -webkit-transform: translateY(0.3em);
+            transform: translateY(0.3em);
+  }
+  100% {
+    -webkit-transform: translateY(-0.3em);
+            transform: translateY(-0.3em);
+  }
+}
+
+@keyframes jumpdot {
+  0% {
+    -webkit-transform: translateY(0.3em);
+            transform: translateY(0.3em);
+  }
+  100% {
+    -webkit-transform: translateY(-0.3em);
+            transform: translateY(-0.3em);
+  }
+}
+
+.anim-point1, .anim-point2, .anim-point3 {
+  width: 6px;
+  height: 6px;
+  border-radius: 30%;
+  background-color: #fdcb46;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-animation-name: jumpdot;
+          animation-name: jumpdot;
+  -webkit-animation-duration: 550ms;
+          animation-duration: 550ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  display: inline-block;
+}
+
+.anim-point2 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.anim-point3 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 
 /************ footer ***********/
@@ -84,9 +139,9 @@ footer a {
   -webkit-box-shadow: 4px 4px 4px 4px #eeeeee;
           box-shadow: 4px 4px 4px 4px #eeeeee;
   border: 1px solid #eeeeee;
-  width: 350px;
-  height: 450px;
-  margin: 50px auto 0px;
+  width: 400px;
+  height: 500px;
+  margin: 50px 25px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,15 +174,32 @@ footer a {
   font-family: 'Rubik', sans-serif;
 }
 
+.contenu {
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 280ms;
+  transition: -webkit-transform 280ms;
+  transition: transform 280ms;
+  transition: transform 280ms, -webkit-transform 280ms;
+}
+
+.contenu:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
 /* ---- menu le chic a la francaise ---- */
 .menu_Le_chic_a_la_francaise {
   background-color: #fff5fe;
   -webkit-box-shadow: 4px 4px 4px 4px #eeeeee;
           box-shadow: 4px 4px 4px 4px #eeeeee;
   border: 1px solid #eeeeee;
-  width: 350px;
-  height: 450px;
-  margin: 50px auto 0px;
+  width: 400px;
+  height: 500px;
+  margin: 50px 25px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,9 +240,9 @@ footer a {
   -webkit-box-shadow: 4px 4px 4px 4px #eeeeee;
           box-shadow: 4px 4px 4px 4px #eeeeee;
   border: 1px solid #eeeeee;
-  width: 350px;
-  height: 450px;
-  margin: 50px auto 0px;
+  width: 400px;
+  height: 500px;
+  margin: 50px 25px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,9 +285,9 @@ footer a {
   -webkit-box-shadow: 4px 4px 4px 4px #eeeeee;
           box-shadow: 4px 4px 4px 4px #eeeeee;
   border: 1px solid #eeeeee;
-  width: 350px;
-  height: 450px;
-  margin: 50px auto 0px;
+  width: 400px;
+  height: 500px;
+  margin: 50px 25px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
