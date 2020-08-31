@@ -68,8 +68,11 @@ nav{
     justify-content: center;
 }
 
+/********** aside ************/
+
 aside p{
     margin: 50px;
+    font-size: 25px;
 }
 
 aside a{
@@ -82,21 +85,20 @@ aside a{
     text-decoration: none;
 }
 
-@keyframes jumpdot {
+@keyframes animation-points {
     0% {
-      transform: translateY(0.3em);
+      transform: translateY(0);
     }
     100% {
-      transform: translateY(-0.3em);
+      transform: translateY(-0.4em);
     }
   }
 
 .anim-point1{
     @include point_jaune;
-    transition-timing-function: ease;
     transition-timing-function: ease-in-out;
-    animation-name: jumpdot;
-    animation-duration: 550ms;
+    animation-name: animation-points;
+    animation-duration: 500ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     display: inline-block;
@@ -111,7 +113,6 @@ aside a{
     @extend .anim-point1;
     animation-delay: 400ms;
 }
-
 
 /************ footer ***********/
 
@@ -149,10 +150,18 @@ footer a{
 
 .menu_la_note_enchantee p{
     font-family: 'Satisfy', cursive;
+    text-decoration: none;
 }
 
 .menu_la_note_enchantee h2{
     font-family: 'Rubik', sans-serif;
+}
+
+.menu_la_note_enchantee a{
+    text-decoration: none;
+    &:visited{
+        color: initial;
+    }
 }
 
 .contenu{

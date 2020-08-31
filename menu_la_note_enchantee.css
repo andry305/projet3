@@ -1,81 +1,131 @@
-html{
-    background-color:#fcdfdb ;
+html {
+  background-color: white;
+  text-align: center;
 }
 
-body{
-    width: 80%;
-    text-align: center;
-    margin: 55px auto;
+section {
+  background-color: #fcdfdb;
+  text-align: center;
+  margin: 60px auto;
+  padding: 60px 0px;
+  width: 80%;
+  height: auto;
+  -webkit-box-shadow: 4px 4px 4px 4px #eeeeee;
+          box-shadow: 4px 4px 4px 4px #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
-h1{
-    font-family: 'Devonshire', cursive;
-    font-weight: 400;
-    margin-top: 0px;
-    margin-bottom: 0px;
+/********** header ********/
+header {
+  background-color: #579c87;
+  color: #fdcb46;
+  height: 80px;
 }
 
-.fa-music{
-    background-image: linear-gradient(155deg, #f05360, #f78f6a);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 0px;
 }
 
-.sous_titre{
-    display: flex;
-    width: 510px;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-left: auto;
-    margin-right: auto;
+/************* section **********/
+h1 {
+  font-family: 'Devonshire', cursive;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-h2{
-    font-family: 'Caveat', cursive;
-    font-weight: 400;
-    font-size: 30px;
-    margin-bottom: 0px;
-    padding: 0 45px;
-    position: relative;
-    display: inline;
-    
+.fa-music {
+  background-image: linear-gradient(155deg, #f05360, #f78f6a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.sous_titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-family: 'Caveat', cursive, sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 0px;
+  padding: 0 45px;
+  position: relative;
+  display: inline;
 }
 
 h2:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 2px;
-    width: 0%;
-    left: 0px;
-    height: 6px;
-    transition: 0.60s cubic-bezier(0.72,-0.01, 0.19, 0.92);
-    background: linear-gradient(155deg, #f05360, #f78f6a);
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  width: 0%;
+  left: 0px;
+  height: 4px;
+  -webkit-transition: 0.6s cubic-bezier(0.72, -0.01, 0.19, 0.92);
+  transition: 0.6s cubic-bezier(0.72, -0.01, 0.19, 0.92);
+  background: linear-gradient(155deg, #f05360, #f78f6a);
 }
 
 h2:hover:after {
-        width: 100%;
-    }
-
-table{
-    width: 530px;
-    margin: 0px auto 20px;
+  width: 100%;
 }
 
-td{
-    text-align: left ;
-    padding: 5px;
-    font-family: 'Kalam', cursive;
-    font-size: 16px;
-    font-weight: 300;
+table {
+  width: 85%;
+  margin: 0px auto 20px;
 }
 
-footer{
-    font-family: 'Devonshire', cursive;
-    font-weight: 400;
-    font-size: 30px;
-    margin-top: 65px;
+td {
+  text-align: left;
+  padding: 5px;
+  font-family: 'Kalam', cursive;
+  font-size: 16px;
+  font-weight: 300;
 }
 
+aside {
+  /***** ancien footer a modifier ******/
+  font-family: 'Devonshire', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 65px;
+}
+
+/************ footer ***********/
+footer {
+  background-color: #579c87;
+  color: #fdcb46;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 20px;
+  font-family: 'Montserrat Extra-light', sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+}
+
+footer a {
+  color: #fdcb46;
+  text-decoration: none;
+}
+/*# sourceMappingURL=menu_la_note_enchantee.css.map */

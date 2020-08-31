@@ -1,0 +1,46 @@
+/*********** header ***********/
+header {
+  background-color: #579c87;
+  color: #fdcb46;
+  height: 80px;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 0px;
+}
+
+/********** section ***********/
+section {
+  margin: 80px 60px;
+  text-align: justify;
+}
+
+h2 {
+  text-align: center;
+}
+
+/********** footer ************/
+footer {
+  background-color: #579c87;
+  color: #fdcb46;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 20px;
+  font-family: 'Montserrat Extra-light', sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+}
+
+footer a {
+  color: #fdcb46;
+  text-decoration: none;
+}
+/*# sourceMappingURL=mentions_legales.css.map */
