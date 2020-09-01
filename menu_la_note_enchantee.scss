@@ -14,25 +14,31 @@ $color-2e  : #fdcb46;
 html{
     background-color: white;
     text-align: center;
+    margin: 0px;
     }
+
+body{
+    margin: 0px;
+}
     
 section{
     background-color:#fcdfdb ;
     text-align: center;
-    margin: 60px auto;
-    padding: 60px 0px;
+    margin: 0px auto 40px;
+    padding: 37px 0px;
     width: 80%;
     height: auto;
     @include bordure_menu;
-
-
-    }
+}
 
 /********** header ********/
 
 header{
     @include couleurs_vert_jaune;
-    height : 80px;
+    height : 70px;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 40px;
 }
 
 header h1{
@@ -40,6 +46,13 @@ header h1{
     text-align: center;
     padding-top: 20px;
     margin-top: 0px;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 12px;
 }
 
 /************* section **********/ 
@@ -61,24 +74,25 @@ h1{
     
 .sous_titre{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: baseline;
     margin-left: auto;
     margin-right: auto;
+    width: 82%;
     }
     
 h2{
     font-family: 'Caveat', cursive, sans-serif;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 22px;
     margin-bottom: 0px;
     padding: 0 45px;
     position: relative;
     display: inline;
-    }
+}    
     
 h2:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     bottom: 2px;
@@ -87,46 +101,56 @@ h2:after {
     height: 4px;
     transition: 0.60s cubic-bezier(0.72,-0.01, 0.19, 0.92);
     background: linear-gradient(155deg, #f05360, #f78f6a);
-    }
+}
     
 h2:hover:after {
     width: 100%;
-    }
+}
+
+h3{
+    font-family: 'Devonshire', cursive;
+    font-size: 29px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
     
 table{
     width: 85%;
-    margin: 0px auto 20px;
+    margin: 4px auto 0px;
     }
     
 td{
     text-align: left ;
-    padding: 5px;
+    padding: 4px;
     font-family: 'Kalam', cursive;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 300;
     }
     
 aside{ /***** ancien footer a modifier ******/
     font-family: 'Devonshire', cursive;
-    font-weight: 400;
-    font-size: 30px;
-    margin-top: 65px;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 30px;
     }
     
 /************ footer ***********/
 
 footer{
     @include couleurs_vert_jaune;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
-    padding: 8px 20px;
+    padding: 8px 10px;
     font-family: 'Montserrat Extra-light', sans-serif;
     font-weight: 200;
     font-size: 22px;
+    position: sticky;
+    bottom: 0px;
 }
 
 footer a{
     color:  $color-2e ;
     text-decoration: none;
-}    
+}
