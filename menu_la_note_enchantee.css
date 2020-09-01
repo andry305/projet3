@@ -38,6 +38,15 @@ header h1 {
   margin-top: 0px;
 }
 
+header a {
+  text-decoration: none;
+}
+
+header a:visited {
+  background-color: #579c87;
+  color: #fdcb46;
+}
+
 p {
   font-family: sans-serif;
   font-size: 25px;
