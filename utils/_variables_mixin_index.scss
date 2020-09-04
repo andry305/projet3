@@ -1,0 +1,12 @@
+$color-1er : #579c87;
+$color-2e  : #fdcb46;
+
+@mixin couleurs_vert_jaune{
+    background-color: $color-1er;
+    color: $color-2e ;
+}
+
+@mixin bordure_menu{
+    box-shadow: 4px 4px 4px 4px #eeeeee;
+    border: 1px solid #eeeeee;
+}

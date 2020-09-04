@@ -1,0 +1,50 @@
+@media (min-width:1000px){
+    section{
+        width: 850px;
+    }
+}
+@media (max-width:720px){
+    .trait{
+        width: 90px;
+    }
+    .sous_titre{
+        justify-content: center;
+    }
+}
+@media (max-width: 600px){
+    .trait{
+        width: 60px;
+    } 
+    h2{
+        font-size: 19px;
+        padding: 30px;
+    }
+}
+@media (max-width:450px){
+    h1{
+        font-size: 25px;
+    }
+    body p{
+        font-size: 20px;
+    }
+    .trait{
+        width: 40px;
+    }
+    h2{
+        padding: 15px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+}
+@media (max-width:250px){
+    footer p{
+        font-size: 12px;
+    }
+    .trait{
+        width: 15px;
+    }
+}
