@@ -133,6 +133,15 @@ footer a {
   text-decoration: none;
 }
 
+footer a:visited {
+  color: #fdcb46;
+}
+
+footer p {
+  padding: 0px;
+  margin: 11px 0px;
+}
+
 footer p:hover {
   -webkit-animation: shake 0.9s;
           animation: shake 0.9s;
@@ -264,7 +273,6 @@ footer p:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
 }
 
 .menu_la_note_enchantee p {
@@ -281,7 +289,7 @@ footer p:hover {
 }
 
 .menu_la_note_enchantee a:visited {
-  color: initial;
+  color: black;
 }
 
 .contenu {
@@ -332,7 +340,6 @@ footer p:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
 }
 
 .menu_Le_chic_a_la_francaise a {
@@ -340,7 +347,7 @@ footer p:hover {
 }
 
 .menu_Le_chic_a_la_francaise a:visited {
-  color: initial;
+  color: linear-gradient(155deg, #d18c3e, #9663fb);
 }
 
 .menu_Le_chic_a_la_francaise h2 {
@@ -349,7 +356,6 @@ footer p:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
 }
 
 /* ---- menu le delice des papilles ---- */
@@ -383,7 +389,6 @@ footer p:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
 }
 
 .menu_le_delice_des_papilles h2 {
@@ -394,7 +399,6 @@ footer p:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
 }
 
 /* ---- menu la palette du gout ---- */
@@ -428,7 +432,6 @@ footer p:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
 }
 
 .menu_la_palette_du_gout h2 {
@@ -438,6 +441,5 @@ footer p:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */

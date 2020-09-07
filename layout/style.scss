@@ -1,33 +1,4 @@
-$color-1er : #579c87;
-$color-2e  : #fdcb46;
-
-@mixin couleurs_vert_jaune{
-    background-color: $color-1er;
-    color: $color-2e ;
-}
-
-@mixin bordure_menu{
-    box-shadow: 4px 4px 4px 4px #eeeeee;
-    border: 1px solid #eeeeee;
-}
-
-@mixin size{
-    width: 400px;
-    height: 500px;
-    margin: 50px 25px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-}
-
-@mixin point_jaune{
-    width: 6px;
-    height: 6px;
-    border-radius: 30%;
-    background-color: $color-2e;
-}
+@import "../utils/variables_mixin_index";
 
 html{
     background-color: #ffffff;
@@ -132,6 +103,17 @@ footer a{
     text-decoration: none;
 }
 
+footer a:visited{
+    color: $color-2e
+}
+
+footer p{
+    padding: 0px;
+    margin: 11px 0px;
+}
+
+
+
 footer p:hover{
     animation: shake 0.9s;
     animation-iteration-count: infinite;
@@ -164,7 +146,6 @@ footer p:hover{
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
 }
 
 .menu_la_note_enchantee p{
@@ -179,7 +160,7 @@ footer p:hover{
 .menu_la_note_enchantee a{
     text-decoration: none;
     &:visited{
-        color: initial;
+        color: black;
     }
 }
 
@@ -208,13 +189,12 @@ footer p:hover{
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
 }
 
 .menu_Le_chic_a_la_francaise a{
     text-decoration: none;
     &:visited{
-        color: initial;
+        color: linear-gradient(155deg,#d18c3e,#9663fb );
     }
 }
 
@@ -224,8 +204,7 @@ footer p:hover{
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
-}
+        }
 
 /* ---- menu le delice des papilles ---- */
 
@@ -241,7 +220,6 @@ footer p:hover{
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
 }
 
 .menu_le_delice_des_papilles h2{
@@ -252,7 +230,6 @@ footer p:hover{
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
 }
 
 /* ---- menu la palette du gout ---- */
@@ -269,7 +246,6 @@ footer p:hover{
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
             
 }
 
@@ -280,5 +256,4 @@ footer p:hover{
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
 }
