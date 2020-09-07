@@ -1,10 +1,4 @@
-$color-1er : #579c87;
-$color-2e  : #fdcb46;
-
-@mixin couleurs_vert_jaune{
-    background-color: $color-1er;
-    color: $color-2e ;
-}
+@import "../utils/variables_mixin_index";
 
 /*********** header ***********/ 
 
