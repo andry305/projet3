@@ -1,4 +1,4 @@
-@import "utils/variables_mixin_index";
+@import "../utils/variables_mixin_index";
 
 html{
     background-color: white;
@@ -46,7 +46,7 @@ a:visited{
     color: #fdcb46;
 }
 
-p{
+h2{
     font-family: sans-serif;
     font-size: 25px;
     font-weight: 500;
@@ -60,7 +60,6 @@ p{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
     }
     
 .sous_titre{
@@ -71,18 +70,25 @@ p{
     margin-right: auto;
     width: 82%;
     }
+
+h3{
+    font-family: 'Devonshire', cursive;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
     
-h2{
+h4{
     font-family: 'Caveat', cursive, sans-serif;
     font-weight: 300;
     font-size: 22px;
-    margin-bottom: 0px;
     padding: 0 45px;
     position: relative;
     display: inline;
 }    
     
-h2:after {
+h4:after {
     content: "";
     display: block;
     position: absolute;
@@ -94,16 +100,8 @@ h2:after {
     background: linear-gradient(155deg, #d2cfcf, #0e0d0d);
 }
     
-h2:hover:after {
+h4:hover:after {
     width: 100%;
-}
-
-h3{
-    font-family: 'Devonshire', cursive;
-    font-size: 29px;
-    font-weight: 300;
-    margin-top: 5px;
-    margin-bottom: 2px;
 }
     
 table{
@@ -121,8 +119,8 @@ td{
     
 aside{ /***** ancien footer a modifier ******/
     font-family: 'Devonshire', cursive;
-    font-weight: 300;
-    font-size: 20px;
+    font-weight: lighter;
+    font-size: 23px;
     margin-top: 30px;
     }
     
@@ -144,6 +142,11 @@ footer{
 footer a{
     color:  $color-2e ;
     text-decoration: none;
+}
+
+footer p{
+    padding: 0px;
+    margin: 11px 0px;
 }
 
 footer p:hover{

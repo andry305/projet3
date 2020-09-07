@@ -12,6 +12,14 @@ header h1 {
   margin-top: 0px;
 }
 
+header a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: #fdcb46;
+}
+
 /********** section ***********/
 section {
   margin: 80px 60px;

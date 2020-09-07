@@ -211,6 +211,13 @@ footer p:hover{
             text-fill-color: transparent;
 }
 
+.menu_Le_chic_a_la_francaise a{
+    text-decoration: none;
+    &:visited{
+        color: initial;
+    }
+}
+
 .menu_Le_chic_a_la_francaise h2{
     font-family: 'PT Serif', serif;
     background-image: linear-gradient(155deg, #d8852e,#c77412);
