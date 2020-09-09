@@ -25,10 +25,12 @@ section{
 
 header{
     @include couleurs_vert_jaune;
-    height : 70px;
+    height : 80px;
+    z-index: 1000;
     position: sticky;
     top: 0px;
     margin-bottom: 40px;
+    z-index: 1000;
 }
 
 header h1{
@@ -150,10 +152,10 @@ td{
 
 footer{
     @include couleurs_vert_jaune;
-    height: 40px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
-    padding: 8px 10px;
+    padding: 8px 20px;
     font-family: 'Montserrat Extra-light', sans-serif;
     font-weight: 200;
     font-size: 22px;

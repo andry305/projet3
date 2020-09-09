@@ -16,6 +16,10 @@ body{
 header{
     @include couleurs_vert_jaune;
     height : 80px;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 40px;
+    z-index: 1000;
 }
 
 header h1{
@@ -23,6 +27,14 @@ header h1{
     text-align: center;
     padding-top: 20px;
     margin-top: 0px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #fdcb46;
 }
 
 /*********** section ***********/
@@ -96,6 +108,8 @@ footer{
     font-family: 'Montserrat Extra-light', sans-serif;
     font-weight: 200;
     font-size: 22px;
+    position: sticky;
+    bottom: 0px;
 }
 
 footer a{
@@ -111,8 +125,6 @@ footer p{
     padding: 0px;
     margin: 11px 0px;
 }
-
-
 
 footer p:hover{
     animation: shake 0.9s;
@@ -222,6 +234,13 @@ footer p:hover{
             -webkit-text-fill-color: transparent;
 }
 
+.menu_le_delice_des_papilles a{
+    text-decoration: none;
+    &:visited{
+        color: linear-gradient(155deg, #0736e0,#6db8f9);
+    }
+}
+
 .menu_le_delice_des_papilles h2{
     font-family: 'Kalam', cursive;
     font-weight: 300;
@@ -246,7 +265,13 @@ footer p:hover{
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            
+}
+
+.menu_la_palette_du_gout a{
+    text-decoration: none;
+    &:visited{
+        color: linear-gradient(155deg, #58a948,#bfff7e);
+    }
 }
 
 .menu_la_palette_du_gout h2{

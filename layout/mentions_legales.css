@@ -2,7 +2,12 @@
 header {
   background-color: #579c87;
   color: #fdcb46;
-  height: 80px;
+  height: 70px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  margin-bottom: 40px;
+  z-index: 1000;
 }
 
 header h1 {
@@ -34,17 +39,20 @@ h2 {
 footer {
   background-color: #579c87;
   color: #fdcb46;
-  height: 50px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 8px 20px;
+  padding: 8px 10px;
   font-family: 'Montserrat Extra-light', sans-serif;
   font-weight: 200;
   font-size: 22px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0px;
 }
 
 footer a {

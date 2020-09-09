@@ -44,13 +44,25 @@
     }
 }
 @media (max-width:250px){
-    h2{
+    h1{
         font-size: 20px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 15px;
     }
     footer p{
         font-size: 12px;
     }
     .trait{
-        width: 15px;
+        display: none;
+    }
+    td{
+        font-size: 12px;
     }
 }
