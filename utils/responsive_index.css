@@ -1,15 +1,24 @@
-@media (min-width: 1350px){
-    nav{
-        padding: 0 220px;
-    }
-}
 @media (min-width: 1790px){
     nav{
         padding: 0 300px;
     }
 }
+@media (min-width: 1350px){
+    nav{
+        padding: 0 220px;
+    }
+}
 @media (max-width:450px){
     h1{
         font-size: 25px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+    aside p{
+        font-size: 18px;
+    }
+    aside a{
+        padding: 10px;
     }
 }
