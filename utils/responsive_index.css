@@ -15,4 +15,7 @@
     aside a{
         padding: 10px;
     }
+    footer p{
+        font-size: 17px;
+    }
 }
