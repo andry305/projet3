@@ -5,7 +5,7 @@
         margin-right: auto;
     }
 }
-@media (max-width:450px){
+@media (min-width:251px) and (max-width:450px){
     h1{
         font-size: 25px;
     }
@@ -19,3 +19,17 @@
         font-size: 17px;
     }
 }
+@media (min-width:50px) and (max-width:300px){
+    h1{
+        font-size: 20px;
+    }
+    aside p{
+        font-size: 14px;
+    }
+    aside a{
+        padding: 10px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+)

@@ -20,7 +20,7 @@
         padding: 30px;
     }
 }
-@media (max-width:450px){
+@media (min-width:251px) and (max-width:450px){
     h1{
         font-size: 25px;
     }
@@ -43,7 +43,7 @@
         font-size: 17px;
     }
 }
-@media (max-width:250px){
+@media (min-width:50px) and (max-width:300px){
     h1{
         font-size: 20px;
     }

@@ -61,7 +61,8 @@ h3 {
   font-family: 'Kaushan Script', cursive;
   font-size: 65px;
   font-weight: normal;
-  background-image: linear-gradient(155deg, #3d923a, #d4fdac);
+  background-image: -webkit-gradient(linear, left top, right top, from(#63af54), color-stop(#a4e971), to(#bfff7e));
+  background-image: linear-gradient(to right, #63af54, #a4e971, #bfff7e);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
